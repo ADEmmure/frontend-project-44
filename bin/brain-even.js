@@ -9,14 +9,13 @@ console.log('Answer "yes" if the namber is even, otherwise answer "no".');
 let i = 1;
 while (i <= 3) {
   const randomNumber = Math.ceil(Math.random() * (50 - 10)) + 10;
-  const userAnswer = readlineSync.question(`Question: ${randomNumber}`);
+  const userAnswer = readlineSync.question(`Question: ${randomNumber}\nYour answer: `);
   let answer = '';
   if (randomNumber % 2 === 0) {
     answer = 'yes';
   } else if (randomNumber % 2 !== 0) {
     answer = 'no';
   }
-  console.log(`Your answer: ${userAnswer}`);
   if (userAnswer === answer) {
     console.log('Correct!');
     if (i === 3) {
