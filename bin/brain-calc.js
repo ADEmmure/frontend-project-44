@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import readlineSync from 'readline-sync';
+import getRandomNumber from '../src/getRandomNumber.js';
 
 console.log('Welcome to the Brain Games!');
 const name = readlineSync.question('May I have your name? ');
@@ -8,18 +9,18 @@ console.log(`Hello, ${name}!`);
 console.log('What is the result of the expression?');
 let i = 1;
 while (i <= 3) {
-  const randomNumber1 = Math.ceil(Math.random() * (20 - 10)) + 10;
-  const randomNumber2 = Math.ceil(Math.random() * (10 - 1)) + 1;
-  const arrSimbol = Math.ceil(Math.random() * (3 - 0)) + 0; // 1-+,2--,3-*
+  const randomNumber1 = getRandomNumber(10, 20);
+  const randomNumber2 = getRandomNumber(0, 10);
+  const randomSymbol = getRandomNumber(0, 3); // 1 = '+', 2 = '-', 3 = '*'
   let answer = 0;
   let question = '';
-  if (arrSimbol === 1) {
+  if (randomSymbol === 1) {
     question = `${randomNumber1} + ${randomNumber2}`;
     answer = (randomNumber1 + randomNumber2);
-  } else if (arrSimbol === 2) {
+  } else if (randomSymbol === 2) {
     question = `${randomNumber1} - ${randomNumber2}`;
     answer = (randomNumber1 - randomNumber2);
-  } else if (arrSimbol === 3) {
+  } else if (randomSymbol === 3) {
     question = `${randomNumber1} * ${randomNumber2}`;
     answer = (randomNumber1 * randomNumber2);
   }
