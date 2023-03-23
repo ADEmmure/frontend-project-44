@@ -9,3 +9,5 @@
 <a href="https://asciinema.org/a/IgIKWv1uEYJOgJSpCIriZ3FS8" target="_blank"><img src="https://asciinema.org/a/IgIKWv1uEYJOgJSpCIriZ3FS8.svg" /></a>
 <h2>Brain-gcd</h2>
 <a href="https://asciinema.org/a/t0ehnVznmFHmJSuJpL6rm8QKz" target="_blank"><img src="https://asciinema.org/a/t0ehnVznmFHmJSuJpL6rm8QKz.svg" /></a>
+<h2>Brain-progression</h2>
+<a href="https://asciinema.org/a/eI873ol6ORxdp1VXzgTnWBJyB" target="_blank"><img src="https://asciinema.org/a/eI873ol6ORxdp1VXzgTnWBJyB.svg" /></a>

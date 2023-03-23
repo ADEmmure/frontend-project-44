@@ -8,7 +8,7 @@ const generateRound = () => {
   const startNumber = getRandomNumber(1, 10);
   const stepNumber = getRandomNumber(1, 10);
   const missingNumber = getRandomNumber(0, 9);
-  const question = [startNumber];
+  const question = [];
   let correctAnswer = 0;
   let result = startNumber;
   for (let i = 0; i < progressionLength; i += 1) {
@@ -16,9 +16,10 @@ const generateRound = () => {
       result += stepNumber;
       correctAnswer = result;
       question.push('..');
+    } else {
+      result += stepNumber;
+      question.push(result);
     }
-    result += stepNumber;
-    question.push(result);
   }
   return [question.join(' '), String(correctAnswer)];
 };
