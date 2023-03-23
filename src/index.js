@@ -12,7 +12,7 @@ const runGameLogic = (rounds, descriptions) => {
     const userAnswer = readlineSync.question(`Question: ${question}\nYour answer: `);
     if (userAnswer === answer) {
       console.log('Correct!');
-      if (i === 2) {
+      if (i === roundsNumber - 1) {
         console.log(`Congratulations,${name}!`);
         return;
       }
