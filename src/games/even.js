@@ -1,7 +1,7 @@
 import getRandomNumber from '../getRandomNumber.js';
 import runGameLogic, { roundsNumber } from '../index.js';
 
-const descriptions = 'Answer "yes" if the namber is even, otherwise answer "no".';
+const descriptions = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const isEven = (number) => number % 2 === 0;
 
