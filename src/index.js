@@ -13,7 +13,7 @@ const runGameLogic = (rounds, descriptions) => {
     if (userAnswer === answer) {
       console.log('Correct!');
       if (i === roundsNumber - 1) {
-        console.log(`Congratulations,${name}!`);
+        console.log(`Congratulations, ${name}!`);
         return;
       }
     } else {
