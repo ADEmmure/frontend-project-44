@@ -11,15 +11,15 @@ const generateRound = () => {
   let question = '';
   if (randomSymbol === 1) {
     question = `${firstNumber} + ${secondNumber}`;
-    correctAnswer = String(firstNumber + secondNumber);
+    correctAnswer = (firstNumber + secondNumber);
   } else if (randomSymbol === 2) {
     question = `${firstNumber} - ${secondNumber}`;
-    correctAnswer = String(firstNumber - secondNumber);
+    correctAnswer = (firstNumber - secondNumber);
   } else if (randomSymbol === 3) {
     question = `${firstNumber} * ${secondNumber}`;
-    correctAnswer = String(firstNumber * secondNumber);
+    correctAnswer = (firstNumber * secondNumber);
   }
-  return [question, correctAnswer];
+  return [question, String(correctAnswer)];
 };
 
 const runBrainCalc = () => {
